@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Random Recipe</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1><%= meal %></h1>
+      </div>
+      <div class="category">
+        <h2>Category: <%= category %></h2>
+      </div>
+      <div class="area">
+        <h3><%= area %></h3>
+      </div>
+      <div class="con">
+        <div class="img">
+          <img src="<%=thumbnaillink %>" alt="foot image" />
+        </div>
+        <div class="instruction">
+          <h4><%= instructions %></h4>
+        </div>
+      </div>
+
+      <div class="video">
+        <iframe
+          width="420"
+          height="315"
+          src="https://youtube.com/embed/<%= youtubelink %>?controls=0"
+        >
+        </iframe>
+      </div>
+    </div>
+  </body>
+</html>
